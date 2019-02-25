@@ -29,6 +29,7 @@
 		<property name="annotatedClasses">
 			<list>
 				<value>net.rodor.holaspringhibernate.entity.Fichero_BD</value>
+				<value>net.rodor.holaspringhibernate.entity.TipoPermiso</value>
 			</list>
 		</property>
 	</bean>

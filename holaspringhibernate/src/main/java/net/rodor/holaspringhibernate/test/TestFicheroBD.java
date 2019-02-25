@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import net.rodor.holaspringhibernate.dao.FicheroBDDao;
 import net.rodor.holaspringhibernate.entity.Fichero_BD;
 
-public class Test {
+public class TestFicheroBD {
 	
 	public static void main(String[] args) {
 
