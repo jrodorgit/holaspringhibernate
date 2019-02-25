@@ -1,2 +1,2 @@
 # holaspringhibernate
-Ejemplo proyecto spring hibernate
+Ejemplo proyecto spring hibernate.
