@@ -1,5 +1,7 @@
 package net.rodor.holaspringhibernate.dao.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +21,11 @@ public class OIXXXServiceImpl implements OIXXXService {
 		dao.create(entidad);
 		dao.update(entidad2);
 		return 0;
+	}
+
+	@Override
+	public List<TipoPermiso> permisosRol(int idRol) {
+		return dao.getPermisosRol(idRol);
 	}
 
 	

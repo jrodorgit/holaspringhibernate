@@ -1,5 +1,7 @@
 package net.rodor.holaspringhibernate.dao;
 
+import java.util.List;
+
 import net.rodor.holaspringhibernate.entity.TipoPermiso;
 
 public interface TipoPermisoDao {
@@ -9,4 +11,6 @@ public interface TipoPermisoDao {
 	int create(TipoPermiso entidad);
 	
 	void update(TipoPermiso entidad);
+	
+	List<TipoPermiso> getPermisosRol(int idRol);
 }

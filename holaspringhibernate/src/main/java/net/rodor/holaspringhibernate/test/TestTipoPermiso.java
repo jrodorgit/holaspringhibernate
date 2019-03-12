@@ -1,5 +1,7 @@
 package net.rodor.holaspringhibernate.test;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,13 +15,20 @@ public class TestTipoPermiso {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"net/rodor/holaspringhibernate/test/config.xml");
-		/**
-		TipoPermisoDao dao = (TipoPermisoDao) context.getBean("TipoPermisoDao");
 		
+		OIXXXService service = (OIXXXService) context.getBean("OIXXXService");
+		List<TipoPermiso> permisos = service.permisosRol(3);
+		System.out.println(permisos);
+		
+		/**
+		 TipoPermisoDao dao = (TipoPermisoDao) context.getBean("TipoPermisoDao"); 
+		 
 		TipoPermiso entidad = dao.find(2);
 
 		System.out.println(entidad);
 		**/
+		
+		/**
 		TipoPermiso permiso = new TipoPermiso();
 		permiso.setNombre("macarrones9");
 		permiso.setDescripcion("con tomate9");
@@ -33,6 +42,7 @@ public class TestTipoPermiso {
 		
 		OIXXXService service = (OIXXXService) context.getBean("OIXXXService");
 		service.doService(permiso, permisoUpdate);
+		***/
 		
 	}
 
