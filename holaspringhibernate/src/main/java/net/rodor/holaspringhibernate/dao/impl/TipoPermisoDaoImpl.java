@@ -27,14 +27,14 @@ public class TipoPermisoDaoImpl implements TipoPermisoDao {
 		return entidad;
 	}
 
-	//@Transactional
+	
 	@Override
 	public int create(TipoPermiso entidad) {
 		int result =  (int) hibernateTemplate.save(entidad);
 		return result;
 	}
 
-	//@Transactional
+	
 	@Override
 	public void update(TipoPermiso entidad) {
 		hibernateTemplate.update(entidad);
